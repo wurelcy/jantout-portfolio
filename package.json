@@ -1,0 +1,19 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "Modules for JanTout portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wurelcy/jantout-portfolio.git"
+  },
+  "author": "Wurelcy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wurelcy/jantout-portfolio/issues"
+  },
+  "homepage": "https://github.com/wurelcy/jantout-portfolio#readme"
+}
