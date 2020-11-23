@@ -1,0 +1,62 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+/*@font-face {
+  font-family: "Jost";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/jost.woff2") format("woff2"), url("../fonts/jost.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/jostbold.woff2") format("woff2"), url("../fonts/jostbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/jostmedium.woff2") format("woff2"), url("../fonts/jostmedium.woff") format("woff");
+}*/
