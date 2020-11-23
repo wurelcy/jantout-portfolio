@@ -1,0 +1,9 @@
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background: url('../img/mobile-bg.jpg');
+  background-repeat: no-repeat;
+  color: $cyan;
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+}

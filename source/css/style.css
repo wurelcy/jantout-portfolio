@@ -335,26 +335,33 @@ img {
   .container {
     max-width: 800px; } }
 
-/*@font-face {
-  font-family: "Jost";
+@font-face {
+  font-family: "Lato";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/jost.woff2") format("woff2"), url("../fonts/jost.woff") format("woff");
-}
+  src: url("../fonts/latoregular.woff2") format("woff2"), url("../fonts/latoregular.woff") format("woff"); }
 
 @font-face {
-  font-family: "Jost";
+  font-family: "Lato";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/jostbold.woff2") format("woff2"), url("../fonts/jostbold.woff") format("woff");
-}
+  src: url("../fonts/latobold.woff2") format("woff2"), url("../fonts/latobold.woff") format("woff"); }
 
 @font-face {
-  font-family: "Jost";
+  font-family: "Lato";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/jostmedium.woff2") format("woff2"), url("../fonts/jostmedium.woff") format("woff");
-}*/
+  src: url("../fonts/latolight.woff2") format("woff2"), url("../fonts/latolight.woff") format("woff"); }
+
+.page-body {
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  background: url("../img/mobile-bg.jpg");
+  background-repeat: no-repeat;
+  color: #99ffff;
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif; }

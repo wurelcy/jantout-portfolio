@@ -1,4 +1,6 @@
 @import "normalize.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
 @import "blocks/portfolio.scss";
 @import "blocks/header.scss";
 @import "blocks/upper-panel.scss";
@@ -6,5 +8,4 @@
 @import "blocks/shiv.scss";
 @import "blocks/footer.scss";
 @import "blocks/community.scss";
-@import "global/variables.scss";
-@import "global/global.scss";
+@import "blocks/page-body.scss";
