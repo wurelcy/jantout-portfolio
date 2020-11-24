@@ -576,6 +576,52 @@ a {
   margin: 0;
   padding: 0; }
 
+.community {
+  display: flex;
+  flex-wrap: wrap; }
+
+.community__elems {
+  display: block;
+  font-size: 64px;
+  line-height: 77px;
+  flex-grow: 1;
+  flex-basis: 100%; }
+
+.community__user-nav {
+  margin-left: 150px;
+  margin-right: 30px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(327.76deg, #AFA1FF 0%, #D3CBFF 24.51%, #8774B5 59.78%, #AFA1FF 100%); }
+
+.community__signin,
+.community__signup {
+  color: #000000;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+  padding: 10px; }
+
+.community__comments {
+  font-size: 64px;
+  line-height: 77px;
+  margin: 0;
+  padding: 0; }
+
+.community__title {
+  font-weight: bold;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 50px;
+  padding: 15px;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1F998D 0%, #1F998D 18.16%, #004C55 89.57%, #002B45 100%); }
+
 .page-body {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
