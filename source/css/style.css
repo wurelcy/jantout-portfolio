@@ -308,6 +308,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+a {
+  text-decoration: none;
+  color: currentcolor; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -331,7 +335,7 @@ img {
   margin: 0 auto;
   padding: 0; }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .container {
     max-width: 800px; } }
 
@@ -356,12 +360,42 @@ img {
   font-display: swap;
   src: url("../fonts/latolight.woff2") format("woff2"), url("../fonts/latolight.woff") format("woff"); }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 900px;
+  align-items: center; }
+
+.header__link {
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px; }
+
+.header__current-link {
+  font-size: 36px;
+  line-height: 43px; }
+
+.header__lang-btn {
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: currentcolor;
+  font-size: 36px;
+  line-height: 43px; }
+
 .page-body {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
-  background: url("../img/mobile-bg.jpg");
+  background-image: url("../img/mobile-bg2.jfif");
+  background-position: center;
+  background-color: #000000;
   background-repeat: no-repeat;
   color: #99ffff;
   margin: 0;
   font-family: "Lato", "Arial", sans-serif; }
+
+@media (min-width: 960px) {
+  .page-body {
+    background-image: url("../img/bg2.jfif"); } }

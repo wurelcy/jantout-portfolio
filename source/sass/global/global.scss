@@ -3,6 +3,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: currentcolor;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
