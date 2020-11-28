@@ -48,16 +48,41 @@
   padding: 0;
 }
 
-.portfolio__skills-title,
-.portfolio__link {
-  max-width: 520px;
+.portfolio__skills-title {
+  display: block;
   color: $linkcyan;
   font-weight: bold;
-  font-size: 64px;
-  line-height: 77px;
-  margin: 0;
-  padding: 0;
+  font-size: 48px;
+  line-height: 58px;
+  margin: 165px auto;
+  padding: 0 27px;
+  padding-top: 30px;
+  padding-bottom: 42px;
+  border-radius: 10px;
   background: linear-gradient(33.3deg, #99FFFF 0%, #00D0B5 19.65%, #00D0B5 58.75%, #99FFFF 98.14%, #BCB0FF 100%);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/skills-arrow-down.svg");
+    background-repeat: no-repeat;
+    width: 795px;
+    height: 173px;
+    left: -140px;
+    top: -100px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/skills-arrow-top.svg");
+    background-repeat: no-repeat;
+    width: 795px;
+    height: 173px;
+    left: -220px;
+    top: 70px;
+  }
 }
 
 .portfolio__skills {
