@@ -474,29 +474,34 @@ a {
 .header .container {
   display: flex;
   justify-content: space-between;
-  min-width: 900px;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden; }
 
 .header__nav-list {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  min-width: 600px;
+  margin-left: 150px; }
 
-.header__nav {
+/*.header__nav {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-
+  justify-content: space-between;
+}*/
 .header__link {
   display: block;
   text-transform: uppercase;
-  font-size: 24px;
-  line-height: 29px; }
-
-.header__current-link {
-  font-size: 36px;
-  line-height: 43px; }
+  font-size: 48px;
+  line-height: 53px;
+  padding: 20px;
+  text-align: center; }
+  .header__link:hover {
+    background-color: #99ffff;
+    color: #000000; }
+  .header__link:active {
+    background-color: #d3cbff;
+    color: #99ffff; }
 
 .header__lang-btn {
   border: 0;
@@ -504,7 +509,8 @@ a {
   text-transform: uppercase;
   color: currentcolor;
   font-size: 48px;
-  line-height: 43px; }
+  line-height: 43px;
+  margin-top: 60px; }
 
 .header__toggle {
   position: relative;
@@ -525,14 +531,14 @@ a {
   background-color: #99ffff;
   border-radius: 10px;
   box-shadow: 0 20px 0 0 #99ffff, 0 40px 0 0 #99ffff;
-  top: -30px; }
+  top: 55px; }
 
 .header__title {
   color: #d3cbff;
   font-weight: bold;
   font-size: 64px;
   line-height: 77px;
-  margin-left: 150px; }
+  margin-left: 250px; }
 
 @media (max-width: 999px) {
   .header__nav--closed .header__nav-list {
@@ -547,7 +553,22 @@ a {
       background-color: #99ffff;
       left: 0;
       top: 150px;
-      box-shadow: 0 10px 0 0 #d3cbff; } }
+      box-shadow: 0 10px 0 0 #d3cbff; }
+  .header__nav--opened .header__title {
+    display: none; }
+  .header__nav--opened .header__toggle::before, .header__nav--opened .header__toggle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 60px;
+    height: 4px;
+    background-color: #99ffff; }
+  .header__nav--opened .header__toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none; }
+  .header__nav--opened .header__toggle::after {
+    transform: rotate(-45deg); } }
 
 .upper-panel {
   margin-top: 20px; }
