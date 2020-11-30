@@ -83,6 +83,11 @@
     left: -220px;
     top: 70px;
   }
+
+  &:active {
+    background: $activelilac;
+    color: $cyan;
+  }
 }
 
 .portfolio__skills {
@@ -91,6 +96,7 @@
   margin: 0;
   margin-top: 76px;
   padding: 0;
+  text-align: center;
 }
 
 .portfolio__link {

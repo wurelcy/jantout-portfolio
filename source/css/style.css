@@ -338,9 +338,9 @@ a {
 .hidden {
   display: none; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 960px; } }
+    max-width: 1200px; } }
 
 @font-face {
   font-family: "Lato";
@@ -437,13 +437,17 @@ a {
     height: 173px;
     left: -220px;
     top: 70px; }
+  .portfolio__skills-title:active {
+    background: #afa1ff;
+    color: #99ffff; }
 
 .portfolio__skills {
   font-size: 64px;
   line-height: 77px;
   margin: 0;
   margin-top: 76px;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
 
 .portfolio__link {
   max-width: 300px;
@@ -484,11 +488,6 @@ a {
   min-width: 600px;
   margin-left: 150px; }
 
-/*.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}*/
 .header__link {
   display: block;
   text-transform: uppercase;
@@ -500,7 +499,7 @@ a {
     background-color: #99ffff;
     color: #000000; }
   .header__link:active {
-    background-color: #d3cbff;
+    background-color: #afa1ff;
     color: #99ffff; }
 
 .header__lang-btn {
@@ -540,7 +539,7 @@ a {
   line-height: 77px;
   margin-left: 250px; }
 
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .header__nav--closed .header__nav-list {
     display: none; }
   .header__nav--closed {
@@ -569,6 +568,32 @@ a {
     box-shadow: none; }
   .header__nav--opened .header__toggle::after {
     transform: rotate(-45deg); } }
+
+@media (min-width: 1200px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header__toggle,
+  .header__title {
+    display: none; }
+  .header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0; }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__link {
+    font-size: 24px;
+    line-height: 29px; }
+  .header__lang-btn {
+    margin: 0;
+    margin-right: 30px;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer; } }
 
 .upper-panel {
   margin-top: 20px; }
@@ -843,6 +868,6 @@ a {
   font-family: "Lato", "Arial", sans-serif;
   overflow-x: hidden; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .page-body {
     background-image: url("../img/bg2.jfif"); } }
