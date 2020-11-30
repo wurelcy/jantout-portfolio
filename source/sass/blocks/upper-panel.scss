@@ -18,7 +18,7 @@
   margin-left: 154px;
 }
 
-.upper-panel__community-link {
+.upper-panel__wrapper {
   display: none;
 }
 
@@ -63,4 +63,84 @@
   line-height: 58px;
   max-width: 667px;
   margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .upper-panel__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px;
+
+    .upper-panel__intro-main {
+      order: 1;
+      margin: 0;
+      margin-top: 150px;
+      margin-bottom: 50px;
+      font-size: 64px;
+      line-height: 77px;
+    }
+
+    .upper-panel__intro {
+      order: 2;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+
+  .upper-panel_social {
+
+    &::before {
+      right: 5px;
+      width: 70px;
+      height: 1221px;
+      z-index: -1;
+    }
+  }
+
+  .upper-panel_social-elem {
+    margin-bottom: 45px;
+
+    &:nth-child(2) {
+
+      .upper-panel__icon {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .upper-panel__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .upper-panel__wrapper {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 350px;
+  }
+
+  .upper-panel__community-link {
+    color: $lilac;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin: 0;
+    padding: 0;
+  }
+
+  .upper-panel__signin {
+    color: $lilac;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 30px;
+  }
 }
