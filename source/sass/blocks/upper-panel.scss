@@ -65,6 +65,10 @@
   margin: 0;
 }
 
+.upper-panel__elems {
+  display: none;
+}
+
 @media (min-width: $desktop-width) {
   .upper-panel__info {
     display: flex;
@@ -75,7 +79,7 @@
     .upper-panel__intro-main {
       order: 1;
       margin: 0;
-      margin-top: 150px;
+      margin-top: 80px;
       margin-bottom: 50px;
       font-size: 64px;
       line-height: 77px;
@@ -83,29 +87,49 @@
 
     .upper-panel__intro {
       order: 2;
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 36px;
+      line-height: 43px;
     }
 
     img {
       margin: 0;
+      width: 538px;
     }
   }
 
   .upper-panel_social {
+    margin-right: 50px;
 
     &::before {
       right: 5px;
-      width: 70px;
-      height: 1221px;
+      width: 100px;
+      height: 740px;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      right: 105px;
+      top: 380px;
+      content: "";
+      width: 36px;
+      height: 328px;
+      background: linear-gradient(327.76deg, #9481FF 0%, #AFA1FF 14.73%, #D3CBFF 24.51%, #8774B5 59.78%);
       z-index: -1;
     }
   }
 
   .upper-panel_social-elem {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    &:first-child {
+      margin-top: 50px;
+    }
 
     &:nth-child(2) {
+      margin-top: 0;
+      margin-bottom: 15px;
 
       .upper-panel__icon {
         width: 80px;
@@ -119,7 +143,7 @@
     height: 60px;
   }
 
-  .upper-panel__wrapper {
+  /*.upper-panel__wrapper {
     order: 2;
     display: flex;
     flex-direction: column;
@@ -143,4 +167,28 @@
     line-height: 29px;
     margin-top: 30px;
   }
+
+  .upper-panel__elems {
+    display: block;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 29px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      background: linear-gradient(327.76deg, #AFA1FF 0%, #D3CBFF 24.51%, #8774B5 59.78%, #AFA1FF 100%);
+      content: "";
+      width: 200px;
+      height: 185px;
+      top: 0;
+      left: -50px;
+      z-index: -1;
+    }
+
+  }*/
+
 }
