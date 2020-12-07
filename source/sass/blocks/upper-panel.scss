@@ -79,6 +79,13 @@
   display: none;
 }
 
+.upper-panel__skills {
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0;
+  margin-left: 100px;
+}
+
 @media (min-width: $desktop-width) {
   .upper-panel__info {
     display: flex;
@@ -105,6 +112,20 @@
       margin: 0;
       width: 538px;
     }
+  }
+
+  .page-portfolio {
+    .upper-panel__intro-main {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .upper-panel__skills {
+    font-size: 36px;
+    line-height: 43px;
+    margin: 0;
+    order: 1;
   }
 
   .upper-panel_social {
@@ -152,53 +173,4 @@
     width: 60px;
     height: 60px;
   }
-
-  /*.upper-panel__wrapper {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    margin-top: 350px;
-  }
-
-  .upper-panel__community-link {
-    color: $lilac;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    margin: 0;
-    padding: 0;
-  }
-
-  .upper-panel__signin {
-    color: $lilac;
-    font-size: 24px;
-    line-height: 29px;
-    margin-top: 30px;
-  }
-
-  .upper-panel__elems {
-    display: block;
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    margin-top: 50px;
-    font-size: 24px;
-    line-height: 29px;
-    position: relative;
-
-    &::after {
-      position: absolute;
-      background: linear-gradient(327.76deg, #AFA1FF 0%, #D3CBFF 24.51%, #8774B5 59.78%, #AFA1FF 100%);
-      content: "";
-      width: 200px;
-      height: 185px;
-      top: 0;
-      left: -50px;
-      z-index: -1;
-    }
-
-  }*/
-
 }
