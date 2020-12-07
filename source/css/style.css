@@ -1085,6 +1085,40 @@ a {
       flex-basis: 100%;
       margin-left: 345px; }
 
+@media (min-width: 1200px) {
+  .footer__nav {
+    display: none; }
+  .footer__contacts {
+    background-image: url("../img/desktop-footer.svg");
+    min-height: 200px; }
+    .footer__contacts::before {
+      top: 15px; }
+    .footer__contacts::after {
+      content: "";
+      position: absolute;
+      height: 180px;
+      width: 201px;
+      right: 35px;
+      top: 15px;
+      background-image: url("../img/footer-horse.svg");
+      background-repeat: no-repeat; }
+  .footer__contacts-email {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 15px; }
+    .footer__contacts-email a {
+      margin-left: 10px; }
+  .footer__contacts-phone {
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 180px; }
+    .footer__contacts-phone a {
+      margin-left: 10px; }
+      .footer__contacts-phone a:last-child {
+        flex-grow: 1;
+        flex-basis: 100%;
+        margin-left: 173px; } }
+
 .community {
   display: flex;
   flex-wrap: wrap;

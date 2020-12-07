@@ -82,3 +82,55 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer__nav {
+    display: none;
+  }
+
+  .footer__contacts {
+    background-image: url('../img/desktop-footer.svg');
+    min-height: 200px;
+
+    &::before {
+      top: 15px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 180px;
+      width: 201px;
+      right: 35px;
+      top: 15px;
+      background-image: url('../img/footer-horse.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  .footer__contacts-email {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 15px;
+
+    a {
+      margin-left: 10px;
+    }
+  }
+
+  .footer__contacts-phone {
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 180px;
+
+    a {
+      margin-left: 10px;
+
+      &:last-child {
+        flex-grow: 1;
+        flex-basis: 100%;
+        margin-left: 173px;
+      }
+    }
+  }
+}
