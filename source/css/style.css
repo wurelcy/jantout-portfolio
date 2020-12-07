@@ -455,6 +455,8 @@ a {
   margin-right: 20px;
   margin-left: auto;
   margin-top: 76px; }
+  .portfolio__seemore:active {
+    color: #d3cbff; }
 
 .portfolio__previw {
   height: 1140px;
@@ -870,17 +872,6 @@ a {
   font-weight: bold;
   text-align: center; }
 
-/*.shiv__description {
-  color: $lilac;
-  font-size: 64px;
-  line-height: 77px;
-  margin: 0;
-  padding: 40px 14px;
-  padding-top: 30px;
-  border: 5px solid $purple;
-  border-radius: 20px;
-  text-align: center;
-}*/
 .shiv__nav {
   display: flex;
   justify-content: space-between;
@@ -897,6 +888,8 @@ a {
   line-height: 77px;
   margin: 0;
   padding: 0; }
+  .shiv__seemore:active {
+    color: #d3cbff; }
 
 .shiv__preview {
   display: flex;
@@ -947,21 +940,17 @@ a {
   height: 750px;
   width: 950px; }
 
-/*.shiv__preview-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-/*.shiv__preview-seemore {
-  font-size: 64px;
-  line-height: 77px;
-  text-transform: uppercase;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  margin: 0;
-  padding: 0;
-}*/
 @media (min-width: 1200px) {
+  .shiv {
+    position: relative; }
+    .shiv::before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 1191px;
+      left: 0;
+      top: -80px;
+      background: linear-gradient(275.7deg, #1F998D 0%, #1F998D 37.9%, #025259 74.02%, #004C55 81.01%, #004E56 89.08%, #00555B 92%, #006064 94.07%, #007170 95.75%, #008780 97.18%, #00A394 98.46%, #00C2AB 99.58%, #002B45 100%); }
   .shiv__desktop-panel {
     display: flex;
     margin-top: 100px;
@@ -1026,6 +1015,8 @@ a {
   font-size: 44px;
   line-height: 77px;
   text-transform: uppercase; }
+  .footer__link:active {
+    color: #d3cbff; }
 
 .footer__lang-btn {
   border: 0;
@@ -1170,7 +1161,10 @@ a {
   letter-spacing: 15px;
   text-transform: uppercase;
   border-radius: 15px;
-  background: linear-gradient(317.94deg, #AFA1FF 14.28%, #D3CBFF 35.29%, #8774B5 65.52%, #AFA1FF 100%); }
+  background: linear-gradient(317.94deg, #AFA1FF 14.28%, #D3CBFF 35.29%, #8774B5 65.52%, #AFA1FF 100%);
+  color: #5d507d; }
+  .community__title:active {
+    color: #99ffff; }
 
 @media (min-width: 1200px) {
   .community {

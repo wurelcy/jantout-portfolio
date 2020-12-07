@@ -57,6 +57,11 @@
   text-transform: uppercase;
   border-radius: 15px;
   background: linear-gradient(317.94deg, #AFA1FF 14.28%, #D3CBFF 35.29%, #8774B5 65.52%, #AFA1FF 100%);
+  color: $purple;
+
+  &:active {
+    color: $cyan;
+  }
 }
 
 

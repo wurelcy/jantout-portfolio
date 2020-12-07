@@ -9,6 +9,10 @@
   font-size: 44px;
   line-height: 77px;
   text-transform: uppercase;
+
+  &:active {
+    color: $lilac;
+  }
 }
 
 .footer__lang-btn {
