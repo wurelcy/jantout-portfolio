@@ -54,7 +54,17 @@
   &:nth-child(2) {
     margin-top: -10px;
     margin-bottom: 30px;
+
+    .upper-panel__icon {
+      width: 140px;
+      height: 140px;
+    }
   }
+}
+
+.upper-panel__icon {
+  width: 120px;
+  height: 120px;
 }
 
 .upper-panel__intro {

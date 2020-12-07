@@ -26,6 +26,11 @@
   align-items: center;
 }
 
+.shiv__desktop-panel,
+.shiv__gallery {
+  display: none;
+}
+
 .shiv__seemore {
   font-size: 64px;
   line-height: 77px;
@@ -103,3 +108,80 @@
   margin: 0;
   padding: 0;
 }*/
+
+@media (min-width: $desktop-width)  {
+  .shiv__desktop-panel {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    color: $lilac;
+    justify-content: center;
+  }
+
+  .shiv__community {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    margin-right: 64px;
+  }
+
+  .shiv__signin {
+    font-size: 36px;
+    line-height: 43px;
+    margin-right: 198px;
+  }
+
+  .shiv__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 135px;
+      height: 135px;
+      background-image: url("../img/icon-circle.svg");
+      background-repeat: no-repeat;
+      top: -40px;
+      left: -25px;
+    }
+  }
+
+  .shiv__preview,
+  .shiv__preview-block,
+  .shiv__recent{
+    display: none;
+  }
+
+  .shiv__gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+  }
+
+  .shiv__gallery-btn {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .shiv__pieces {
+    display: flex;
+  }
+
+  .shiv__pieces-elems {
+    width: 320px;
+    height: 347px;
+    border: 5px solid $purple;
+    border-radius: 20px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
