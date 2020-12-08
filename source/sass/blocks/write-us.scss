@@ -23,3 +23,17 @@
     left: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .write-us__feedback {
+    font-size: 36px;
+    line-height: 43px;
+    display: block;
+    min-width: 100%;
+
+    &::before {
+      top: 10px;
+      left: 20%;
+    }
+  }
+}
