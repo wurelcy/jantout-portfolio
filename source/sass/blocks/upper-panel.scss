@@ -75,7 +75,8 @@
   margin: 0;
 }
 
-.upper-panel__elems {
+.upper-panel__elems,
+.upper-panel__skills {
   display: none;
 }
 
@@ -108,6 +109,7 @@
   }
 
   .upper-panel__skills {
+    display: block;
     font-size: 36px;
     line-height: 43px;
     margin: 0;
