@@ -79,13 +79,6 @@
   display: none;
 }
 
-.upper-panel__skills {
-  font-size: 48px;
-  line-height: 56px;
-  margin: 0;
-  margin-left: 100px;
-}
-
 @media (min-width: $desktop-width) {
   .upper-panel__info {
     display: flex;
@@ -111,13 +104,6 @@
     img {
       margin: 0;
       width: 538px;
-    }
-  }
-
-  .page-portfolio {
-    .upper-panel__intro-main {
-      margin-top: 30px;
-      margin-bottom: 20px;
     }
   }
 
@@ -147,6 +133,20 @@
       height: 328px;
       background: linear-gradient(327.76deg, #9481FF 0%, #AFA1FF 14.73%, #D3CBFF 24.51%, #8774B5 59.78%);
       z-index: -1;
+    }
+  }
+
+  .page-portfolio {
+    .upper-panel__intro-main {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .upper-panel_social {
+
+      &::after {
+        display: none;
+      }
     }
   }
 
