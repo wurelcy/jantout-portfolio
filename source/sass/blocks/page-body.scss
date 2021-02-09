@@ -1,8 +1,9 @@
 .page-body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  background-image: url('../img/mobile-bg2.jfif');
-  background-position: center;
+  background-image: url('../img/bg2.jfif');
+  background-position: center top;
+  background-size: 80%;
   background-color: $black;
   background-repeat: no-repeat;
   color: $cyan;
@@ -11,8 +12,8 @@
   overflow-x: hidden;
 }
 
-@media(min-width: $desktop-width) {
+@media(max-width: $mobile-width-only) {
   .page-body {
-    background-image: url('../img/bg2.jfif');
+    background-image: url('../img/mobile-bg2.jfif');
   }
 }

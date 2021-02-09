@@ -22,7 +22,7 @@
   "scripts": {
     "test": "test",
     "start": "gulp",
-    "build": "gulp styles"
+    "build": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",

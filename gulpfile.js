@@ -53,14 +53,14 @@ exports.webps = webps;
 
 // Sprite
 
-// const sprite = () => {
-//  return gulp.src("source/img/**/icon-*.svg")
-/*    .pipe(svgstore())
+const sprite = () => {
+ return gulp.src("source/img/**/icon-*.svg")
+   .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"))
 }
 
-exports.sprite = sprite;*/
+exports.sprite = sprite;
 
 // Server
 
