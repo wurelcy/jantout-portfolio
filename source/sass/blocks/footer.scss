@@ -29,7 +29,6 @@
   }
 }
 
-
 .footer__contacts {
   display: flex;
   justify-content: center;
@@ -54,5 +53,42 @@
 
   &:active {
     opacity: 0.2;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .footer {
+    padding-bottom: 31px;
+
+    .container {
+      &::before {
+        width: 48px;
+        height: 48px;
+        background-position: 50% 20%;
+        background-size: cover;
+        top: 8%;
+        left: 0;
+      }
+
+      &::after {
+        width: 46px;
+        height: 42px;
+        top: 15%;
+        right: 0;
+        background-size: cover;
+      }
+    }
+  }
+
+  .footer__contacts {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 18px 0;
+
+    svg {
+      margin-right: 7px;
+      height: 18px;
+      width: 13px;
+    }
   }
 }

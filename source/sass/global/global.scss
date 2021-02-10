@@ -31,7 +31,7 @@ a {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0;
 }
@@ -40,9 +40,9 @@ a {
   display: none;
 }
 
-@media (min-width: $desktop-width) {
+@media (max-width: $mobile-width-only) {
   .container {
-    max-width: 1200px;
+    max-width: 280px;
   }
 }
 

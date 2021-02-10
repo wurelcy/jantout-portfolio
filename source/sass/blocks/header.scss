@@ -29,3 +29,48 @@
     opacity: 0.3;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .header__title {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: $lilac;
+  }
+
+  .header {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $cyan;
+      bottom: 10px;
+      left: 0;
+    }
+
+    &::after {
+      background-color: $lilac;
+      bottom: 6px;
+      left: 0;
+    }
+
+    img {
+      display: none;
+    }
+
+    .container {
+      padding: 10px 0;
+    }
+  }
+
+  .header__lang-btn {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+  }
+}

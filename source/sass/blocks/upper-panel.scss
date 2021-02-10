@@ -73,10 +73,68 @@
 }
 
 .upper-panel__slogan {
+  font-weight: 300;
   font-size: 36px;
   line-height: 43px;
   text-transform: uppercase;
   color: $cyandark;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .upper-panel {
+    padding-top: 12px;
+    padding-bottom: 11px;
+
+    .container {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .upper-panel_social-elem {
+    margin: 0;
+    margin-right: 9px;
+
+    svg {
+      height: 32px;
+      width: 32px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .upper-panel_social {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 20px 0;
+  }
+
+  .upper-panel__intro-main {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.195em;
+  }
+
+  .upper-panel__intro {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 3px;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+
+  .upper-panel__slogan {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
