@@ -351,6 +351,13 @@ a {
 
 @font-face {
   font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Lato";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -371,6 +378,7 @@ a {
   text-transform: uppercase;
   margin: 0;
   margin-left: 70px;
+  margin-bottom: 61px;
   padding: 0; }
 
 .portfolio__list {
@@ -386,7 +394,8 @@ a {
 .portfolio__element {
   height: 315px;
   width: 335px;
-  border: 3px solid #5d507d; }
+  border: 3px solid #5d507d;
+  border-radius: 5px; }
 
 .header__title {
   display: none; }
@@ -400,17 +409,24 @@ a {
 .header__lang-btn {
   border: 0;
   background: transparent;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 43px;
   color: #99ffff;
   text-transform: uppercase; }
+  .header__lang-btn:focus, .header__lang-btn:hover {
+    color: #00d0b5; }
+  .header__lang-btn:active {
+    color: #99ffff;
+    opacity: 0.3; }
 
-.upper-panel .container {
-  display: flex;
-  justify-content: space-between; }
-
-.upper-panel img {
-  display: none; }
+.upper-panel {
+  padding-top: 109px;
+  padding-bottom: 121px; }
+  .upper-panel .container {
+    display: flex;
+    justify-content: space-between; }
+  .upper-panel img {
+    display: none; }
 
 .upper-panel_social {
   list-style: none;
@@ -419,6 +435,19 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.upper-panel_social-elem {
+  margin-bottom: 22px; }
+  .upper-panel_social-elem svg {
+    fill: currentColor;
+    stroke: currentColor; }
+  .upper-panel_social-elem:focus, .upper-panel_social-elem:hover {
+    color: #d3cbff; }
+  .upper-panel_social-elem:active {
+    color: #99ffff;
+    opacity: 0.3; }
+  .upper-panel_social-elem:last-child {
+    margin-bottom: 0; }
 
 .upper-panel__info {
   margin-left: auto;
@@ -441,6 +470,8 @@ a {
   line-height: 43px;
   color: #d3cbff;
   margin: 0;
+  margin-top: 69px;
+  margin-bottom: 66px;
   padding: 0; }
 
 .upper-panel__slogan {
@@ -450,6 +481,71 @@ a {
   color: #00d0b5;
   margin: 0;
   padding: 0; }
+
+.footer {
+  padding-bottom: 170px; }
+  .footer .container {
+    position: relative; }
+    .footer .container::before {
+      content: "";
+      position: absolute;
+      width: 221px;
+      height: 221px;
+      background-image: url("../img/jantout.png");
+      background-position: 50% 20%;
+      background-size: cover;
+      border-radius: 50%;
+      top: 8%;
+      left: 0; }
+    .footer .container::after {
+      content: "";
+      position: absolute;
+      width: 197px;
+      height: 180px;
+      background-image: url("../img/icon-logo.svg");
+      top: 15%;
+      right: 0; }
+
+.footer__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d3cbff;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  padding: 101px 0; }
+  .footer__contacts svg {
+    margin-right: 18px;
+    stroke: currentColor;
+    fill: currentColor; }
+  .footer__contacts:hover, .footer__contacts:focus {
+    color: #5d507d; }
+  .footer__contacts:active {
+    opacity: 0.2; }
+
+.skills {
+  padding: 234px 0;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px; }
+  .skills .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.skills__title {
+  padding: 0;
+  margin: 0;
+  margin-right: 88px;
+  text-transform: uppercase; }
+
+.skills__list {
+  padding: 0;
+  margin: 0;
+  text-transform: lowercase;
+  max-width: 524px; }
 
 .page-body {
   display: grid;

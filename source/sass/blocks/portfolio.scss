@@ -6,9 +6,9 @@
   text-transform: uppercase;
   margin: 0;
   margin-left: 70px;
+  margin-bottom: 61px;
   padding: 0;
 }
-
 
 .portfolio__list {
   list-style: none;
@@ -24,4 +24,5 @@
   height: 315px;
   width: 335px;
   border: 3px solid $purple;
+  border-radius: 5px;
 }

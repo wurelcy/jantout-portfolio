@@ -1,1 +1,58 @@
-//
+.footer {
+  padding-bottom: 170px;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 221px;
+      height: 221px;
+      background-image: url("../img/jantout.png");
+      background-position: 50% 20%;
+      background-size: cover;
+      border-radius: 50%;
+      top: 8%;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 197px;
+      height: 180px;
+      background-image: url("../img/icon-logo.svg");
+      top: 15%;
+      right: 0;
+    }
+  }
+}
+
+
+.footer__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $lilac;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  padding: 101px 0;
+
+  svg {
+    margin-right: 18px;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $purple;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}

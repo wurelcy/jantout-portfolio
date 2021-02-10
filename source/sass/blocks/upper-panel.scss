@@ -1,4 +1,7 @@
 .upper-panel {
+  padding-top: 109px;
+  padding-bottom: 121px;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -16,6 +19,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.upper-panel_social-elem {
+  margin-bottom: 22px;
+
+  svg {
+    fill: currentColor;
+    stroke: currentColor;
+  }
+
+  &:focus,
+  &:hover {
+    color: $lilac;
+  }
+
+  &:active {
+    color: $cyan;
+    opacity: 0.3;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .upper-panel__info {
@@ -41,6 +67,8 @@
   line-height: 43px;
   color: $lilac;
   margin: 0;
+  margin-top: 69px;
+  margin-bottom: 66px;
   padding: 0;
 }
 
