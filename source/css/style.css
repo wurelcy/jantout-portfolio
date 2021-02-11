@@ -351,10 +351,10 @@ a {
 
 @font-face {
   font-family: "Lato";
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"); }
+  src: url("../fonts/Lato-Thin.woff2") format("woff2"), url("../fonts/Lato-Thin.woff") format("woff"); }
 
 @font-face {
   font-family: "Lato";
@@ -365,10 +365,17 @@ a {
 
 @font-face {
   font-family: "Lato";
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
   src: url("../fonts/latolight.woff2") format("woff2"), url("../fonts/latolight.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff") format("woff"); }
 
 .portfolio__title {
   font-weight: normal;
@@ -675,7 +682,8 @@ a {
   .skills__title {
     font-size: 12px;
     line-height: 14px;
-    margin-right: 7px; }
+    margin-right: 7px;
+    max-width: 80px; }
   .skills__list {
     font-size: 11px;
     line-height: 13px;
@@ -692,7 +700,7 @@ a {
   background-repeat: no-repeat;
   color: #99ffff;
   margin: 0;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: "Lato", "Open Sans", sans-serif;
   overflow-x: hidden; }
 
 @media (max-width: 767px) {
