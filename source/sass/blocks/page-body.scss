@@ -1,6 +1,6 @@
 .page-body {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: min-content max-content min-content;
   background-image: url('../img/bg2.jfif');
   background-position: center top;
   background-size: 80%;
